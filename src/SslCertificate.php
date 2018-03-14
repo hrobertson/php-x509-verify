@@ -49,18 +49,18 @@ class SslCertificate
      * @param string $cert - PEM encoded cert
      * @param string $caCert - PEM encoded cert that possibly signed $cert
      * @return bool
-     * @throws \ErrorException
+     * @throws \ErrorException, \RuntimeException
      */
     public function isSignedBy(SslCertificate $otherCertificate)
     {
         if (!function_exists('openssl_pkey_get_public')) {
-            die('Need the openssl_pkey_get_public() function.');
+            throw new \RuntimeException('Need the openssl_pkey_get_public() function.');
         }
         if (!function_exists('openssl_public_decrypt')) {
-            die('Need the openssl_public_decrypt() function.');
+            throw new \RuntimeException('Need the openssl_public_decrypt() function.');
         }
         if (!function_exists('hash')) {
-            die('Need the php hash() function.');
+            throw new \RuntimeException('Need the php hash() function.');
         }
         // Grab the encrypted signature from the der encoded cert.
         $encryptedSig = $this->getSignature();
