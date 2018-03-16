@@ -1,0 +1,35 @@
+{
+  "name": "hrobertson/x509-verify",
+  "description": "Check if one X.509 certificate is the signer of another",
+  "keywords": [ "ssl", "certificate", "x509", "certificate-chain" ],
+  "homepage": "https://github.com/hrobertson/php-x509-verify",
+  "licence": "GPL-2.0-only",
+  "authors": [
+    {
+      "name": "Hamish Robertson",
+      "homepage": "https://github.com/hrobertson",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "source": "https://github.com/hrobertson/php-x509-verify",
+    "issues": "https://github.com/hrobertson/php-x509-verify/issues"
+  },
+  "require": {
+    "php": "^5.6 || ^7.1",
+    "ext-openssl": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "HRobertson\\X509Verify\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "HRobertson\\X509Verify\\Test\\": "tests/"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^5 || ^7"
+  }
+}
