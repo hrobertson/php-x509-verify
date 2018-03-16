@@ -3,7 +3,7 @@
   "description": "Check if one X.509 certificate is the signer of another",
   "keywords": [ "ssl", "certificate", "x509", "certificate-chain" ],
   "homepage": "https://github.com/hrobertson/php-x509-verify",
-  "licence": "GPL-2.0-only",
+  "license": "GPL-2.0-only",
   "authors": [
     {
       "name": "Hamish Robertson",
