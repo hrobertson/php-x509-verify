@@ -16,7 +16,7 @@
     "issues": "https://github.com/hrobertson/php-x509-verify/issues"
   },
   "require": {
-    "php": "^5.6 || ^7.1",
+    "php": "^5.6 || ^7.0",
     "ext-openssl": "*"
   },
   "autoload": {
